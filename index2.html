@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katelyn Portfolio</title>
+    <title>Katelyn's Portfolio</title>
     <style>
         body {
             margin: 0;
@@ -17,19 +17,6 @@
             color: white;
             padding: 2rem;
             text-align: center;
-        }
-
-        nav {
-            background: #333;
-            padding: 0.8rem;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 1rem;
-            text-decoration: none;
-            font-weight: bold;
         }
 
         main {
@@ -47,19 +34,26 @@
             padding-bottom: 0.5rem;
         }
 
-        /* Photo + About layout */
-        .about-wrapper {
+        /* Photo + Personal Statement layout */
+        .intro-wrapper {
             display: flex;
             align-items: flex-start;
             gap: 1.5rem;
         }
 
-        .about-wrapper img {
+        .intro-wrapper img {
             width: 180px;
             height: 180px;
             object-fit: cover;
             border-radius: 50%;
             border: 4px solid #333;
+        }
+
+        .skills-list {
+            background: white;
+            padding: 1rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         .project {
@@ -83,8 +77,79 @@
 <body>
 
     <header>
-        <h1>Katelyn</h1>
-        <p>Marketing • Creative Strategy • Campaign Design</p>
+        <h1>Katelyn Gant</h1>
     </header>
 
-    <nav>
+    <main>
+
+        <!-- PERSONAL STATEMENT -->
+        <section id="personal-statement">
+            <h2>Personal Statement</h2>
+
+            <div class="intro-wrapper">
+                <img src="headshot.jpeg" alt="Photo of Katelyn">
+
+                <p>
+                    I am a junior majoring in Marketing and Finance at Rutgers Business School who is passionate about using financial and analytical insights to build strategic and engaging brand experiences.  
+                </p>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <div class="skills-list">
+                <ul>
+                    <li>Microsoft Office</li>
+                    <li>Canva</li>
+                    <li>Analyzing statistical data via R and RStudio</li>
+                    <li>Visual Studio Code</li>
+                    <li>Video editing via Capcut</li>
+                    <li>Social Media Planning & Execution</li>
+                    <li>Corporate Outreach</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>Internal "Volunteer Time Off" Marketing Campaign</h3>
+                <p>Designed a full internal campaign including messaging, visual identity, and creative design.</p>
+                <p><a href="https://canva.link/u4u8478rv2a41b2" target="_blank">View project flyer!</a></p>
+             <p><a href="https://canva.link/0c0zxdzru00qa1q" target="_blank">View project screensaver!</a></p>
+
+            </div>
+
+            <div class="project">
+                <h3>Sports Fan Engagement Concepts Research & Proposal</h3>
+                <p>Researched different fan activation strategies to enahance fan engagement in sports partnerships and sat in on various meetings with current and potentaial sports partners.  
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Company-Wide Event Planning</h3>
+                <p>Assisted in the organization, planning, and corporate outreach for a company-wide volunteering event.</p>
+            </div>
+
+        </section>
+
+        <!-- CONTACT -->
+        <section id="Contact">
+            <h2>Contact Information</h2>
+            <p>Email: katelyn.gant0@gmail.com</p>
+            <p>LinkedIn: www.linkedin.com/in/katelyn-gant</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Katelyn Portfolio</p>
+    </footer>
+
+</body>
+</html>
+
